@@ -12,6 +12,7 @@
   --social-media-color: #afb1b8;
   --social-media-hover-text-color: #ffffff;
   --social-media-hover-background-color: #2196f3;
+  --footer-background-color: #2f303a;
 }
 
 body,
@@ -367,8 +368,48 @@ h2 {
   letter-spacing: 0.48px;
 }
 
+.regular-costumers-section {
+  width: 1170px;
+  height: 184px;
+  flex-shrink: 0;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.regular-costumers-section h2 {
+  margin-bottom: 50px;
+}
+
+.regular-costumers-section .logo-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.logo-section .logo {
+  width: 170px;
+  height: 92px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section .logo svg {
+  width: 106px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
 .bottom-section {
-  background-color: #2f303a;
+  background: linear-gradient(
+    to top,
+    var(--footer-background-color),
+    var(--footer-background-color)
+  );
   display: flex;
   justify-content: center;
   width: 100%;
