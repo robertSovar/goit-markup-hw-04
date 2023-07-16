@@ -13,8 +13,9 @@
   --social-media-hover-text-color: #ffffff;
   --social-media-hover-background-color: #2196f3;
   --footer-background-color: #2f303a;
+  --logo-background-color: #2196f3;
 }
-
+/* Studio page */
 body,
 body :visited {
   font-family: "Roboto", sans-serif;
@@ -404,6 +405,11 @@ h2 {
   flex-shrink: 0;
 }
 
+.logo-section :hover {
+  color: var(--logo-background-color);
+  border-color: var(--logo-background-color);
+}
+
 .bottom-section {
   background: linear-gradient(
     to top,
@@ -420,9 +426,14 @@ h2 {
   width: 1200px;
   height: 251px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+  gap: 94px;
   flex-shrink: 0;
+}
+
+.bottom-contact-details .bottom-studio-text {
+  color: #ffffff;
 }
 
 .bottom-contact-details .webstudio-icon {
@@ -445,6 +456,57 @@ h2 {
   margin-bottom: 12px;
 }
 
+.find-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 206px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.find-us p {
+  color: #ffffff;
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.find-us .bottom-social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.find-us .bottom-social-icons .bottom-social-media-icons {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-us .bottom-social-icons :hover,
+.find-us .bottom-social-icons :focus {
+  background-color: var(--logo-background-color);
+}
+
+.find-us .bottom-social-icons .bottom-social-media-icons .social-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: white;
+}
+
+/* Portfolio page */
 .portfolio-layout-page {
   display: flex;
   width: 1600px;
@@ -574,4 +636,13 @@ hr {
 
 .photo-section-board .target {
   margin-left: 24px;
+}
+
+.album-section :focus,
+.album-section :hover {
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
