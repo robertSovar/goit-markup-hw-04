@@ -17,7 +17,7 @@ body :visited {
   font-weight: 400;
 }
 
-body .page-layout {
+body {
   width: var(--section-width);
   height: 2348px;
   width: 100%;
@@ -122,7 +122,6 @@ ul a:active {
   flex-shrink: 0;
 }
 
-
 .mail-address svg {
   width: 10px;
   height: 16px;
@@ -180,6 +179,12 @@ ul a:active {
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .text-board-section h3 {
   color: var(--header-text-color);
   font-size: 14px;
@@ -190,9 +195,35 @@ ul a:active {
   margin-bottom: 10px;
 }
 
+.hero-section-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 94px;
+  margin-bottom: 30px;
+}
+
+.hero-section-icons .icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+
+.hero-section-icons .icons {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
 .text-board-section {
   display: flex;
   justify-content: center;
+  gap: 30px;
   width: var(--section-width);
   color: var(--normal-text-color);
   font-size: 14px;
