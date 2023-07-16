@@ -23,7 +23,7 @@ body :visited {
 
 body {
   width: var(--section-width);
-  height: 2348px;
+  height: 2930px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -281,7 +281,7 @@ h2 {
 
 .our-team-section {
   width: 1600px;
-  height: 648px;
+  height: 708px;
   flex-shrink: 0;
   background-color: #f5f4fa;
   display: flex;
@@ -302,6 +302,7 @@ h2 {
 .team-member-panel .card {
   width: 270px;
   height: 428px;
+  margin-left: 30px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -316,6 +317,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .social-icons .social-media-icons {
@@ -350,12 +352,6 @@ h2 {
 .team-member-panel .profession-title {
   margin-bottom: 16px;
   color: var(--normal-text-color);
-}
-
-.team-member-panel .card {
-  margin-left: 30px;
-  width: 270px;
-  height: 368px;
 }
 
 .team-member-list h3 {
