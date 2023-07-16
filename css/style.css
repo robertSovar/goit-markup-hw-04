@@ -8,6 +8,10 @@
   --portfolio-button-color: #f5f4fa;
   --section-width: 1600px;
   --border-radius-value: 4px;
+  --social-media-background-color: #ffffff;
+  --social-media-color: #afb1b8;
+  --social-media-hover-text-color: #ffffff;
+  --social-media-hover-background-color: #2196f3;
 }
 
 body,
@@ -248,7 +252,6 @@ ul a:active {
   flex-shrink: 0;
   width: 270px;
   height: 75px;
-  margin-top: 94px;
   margin-bottom: 94px;
 }
 
@@ -286,23 +289,66 @@ h2 {
 }
 
 .our-team-section h2 {
+  width: var(--section-width);
   margin-top: 94px;
   margin-bottom: 50px;
 }
 
-.team-member-panel,
-.team-member-panel h3,
-.team-member-panel .profession-title {
+.team-member-panel {
   display: flex;
   justify-content: center;
 }
+
+.team-member-panel .card {
+  width: 270px;
+  height: 428px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+}
+
+.team-member-panel .card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons .social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background-color: var(--social-media-background-color);
+  border-radius: 50%;
+}
+
+.social-icons :hover,
+.social-icons :focus {
+  background-color: var(--social-media-hover-background-color);
+  color: var(--social-media-hover-text-color);
+}
+
+.social-media-icons svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--social-media-color);
+}
+
 .team-member-panel h3 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .team-member-panel .profession-title {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--normal-text-color);
 }
 
@@ -310,10 +356,6 @@ h2 {
   margin-left: 30px;
   width: 270px;
   height: 368px;
-  flex-shrink: 0;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
-    0px 1px 3px 0px #0000001f;
 }
 
 .team-member-list h3 {
