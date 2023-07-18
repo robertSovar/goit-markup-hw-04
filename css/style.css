@@ -410,6 +410,7 @@ h2 {
 .logo-section :hover {
   color: var(--logo-background-color);
   border-color: var(--logo-background-color);
+  fill: var(--logo-background-color);
 }
 
 .bottom-section {
