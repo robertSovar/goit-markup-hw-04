@@ -240,12 +240,6 @@ ul a:active {
   letter-spacing: 0.42px;
 }
 
-.text-board-section div {
-  height: 75px;
-  width: 270px;
-  margin-left: 30px;
-}
-
 .text-board-section .attention-board,
 .text-board-section .punctuality-board,
 .text-board-section .planning-board,
@@ -621,6 +615,8 @@ hr {
   font-weight: 700;
   line-height: 2.25em;
   letter-spacing: 1.08px;
+  margin-left: 24px;
+  margin-bottom: 0px;
 }
 
 .photo-section-board .photo-card {
@@ -633,12 +629,9 @@ hr {
   flex-direction: column;
 }
 
-.photo-section-board h3 {
-  margin-left: 24px;
-}
-
 .photo-section-board .target {
   margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .album-section :focus,
@@ -648,4 +641,10 @@ hr {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.photo-card :focus,
+.photo-card :hover {
+  border: none;
+  box-shadow: none;
 }
